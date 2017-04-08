@@ -8,6 +8,7 @@
     "react"
   ],
   "extends": [
+    "react-app",
     "eslint:recommended",
     "plugin:react/recommended"
   ],
