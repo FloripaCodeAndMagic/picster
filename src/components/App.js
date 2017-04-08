@@ -1,6 +1,10 @@
 import React from 'react';
 import firebase from 'firebase';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
+
+import * as colors from '../colors'
+
+import Login from '../containers/Login'
 
 const config = {
   apiKey: "AIzaSyBqCmZMQt76m87ftuxXEv-tGyftCCOVWXw",
@@ -13,8 +17,32 @@ const config = {
 
 firebase.initializeApp(config);
 
-const App = () => (
-  <Text>Picster</Text>
-)
+const App = () => {
+  const { viewStyle, textStyle } = style
+
+  return (
+    <View>
+      <View style={viewStyle}>
+        <Text style={textStyle}>Picster</Text>
+      </View>
+
+      <Login />
+    </View>
+  )
+}
+
+const style = {
+  viewStyle: {
+    padding: 20,
+    paddingTop: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.yellow
+  },
+  textStyle: {
+    fontSize: 24
+  }
+}
+
 
 export default App
