@@ -17,10 +17,9 @@ class Login extends Component {
         <View>
           <TextInput
             autoCorrect={false}
-            autoCapitalize={'none'}
-            keyboardType={'email-address'}
-            autoFocus={true}
-            placeholder={'example@example.com'}
+            autoCapitalize='none'
+            keyboardType='email-address'
+            placeholder='example@example.com'
             style={textInputStyle} />
         </View>
         <View>
@@ -50,11 +49,12 @@ const styles = {
     flex: 1
   },
   textInputStyle: {
-    padding: 20,
-    height: 24,
+    height: 50,
     width: 300,
     textAlign: 'center',
-    borderColor: '#f00',
+    borderColor: 'black',
+    marginTop: 10,
+    borderRadius: 5,
     borderStyle: 'solid',
     borderWidth: 2
   }
