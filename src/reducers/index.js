@@ -1,3 +1,6 @@
-const reducer = (state, actions) => state
+import { combineReducers } from 'redux'
+import login from './login'
 
-export default reducer;
+const rootReducer = combineReducers({ login })
+
+export default rootReducer;
