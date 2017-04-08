@@ -1,10 +1,10 @@
-import React from 'react';
-import firebase from 'firebase';
-import { Text, View } from 'react-native';
+import React from 'react'
+import firebase from 'firebase'
+import { Text, View } from 'react-native'
 
-import * as colors from '../colors'
+import * as colors from './colors'
 
-import Login from '../containers/Login'
+import Login from './containers/Login'
 
 const config = {
   apiKey: "AIzaSyBqCmZMQt76m87ftuxXEv-tGyftCCOVWXw",
@@ -16,6 +16,7 @@ const config = {
 };
 
 firebase.initializeApp(config);
+
 
 const App = () => {
   const { viewStyle, textStyle } = style

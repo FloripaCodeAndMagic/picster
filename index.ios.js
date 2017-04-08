@@ -2,7 +2,7 @@
 // You'll be free hackers
 // You'll be free hackers ooooooooooooooo
 
-import App from './src/components/App';
+import Root from './src/Root';
 import { AppRegistry } from 'react-native';
 
-AppRegistry.registerComponent('picster', () => App);
+AppRegistry.registerComponent('picster', () => Root);
